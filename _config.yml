@@ -102,6 +102,6 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/Xuan-A-Yu/Xuan-A-Yu.github.io.git
+  repository: git@github.com:Xuan-A-Yu/Xuan-A-Yu.github.io.git
   branch: main
 
