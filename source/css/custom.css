@@ -1,0 +1,22 @@
+/* ============================================
+   代码块修复：开启自动换行 + 关闭行号时的多余列问题
+   ============================================ */
+
+/* 1. 收回为行号预留的左内边距，消除多余空白列 */
+#article-container figure.highlight pre,
+#article-container pre[class*='language-'] {
+    padding-left: 1em !important;
+}
+
+/* 2. 强制长代码行自动换行，不出现横向滚动条 */
+#article-container figure.highlight pre code,
+#article-container pre[class*='language-'] code {
+    white-space: pre-wrap !important;
+    word-break: break-all !important;
+}
+
+/* 3. 隐藏可能残留的行号容器，避免它继续占据空间 */
+#article-container .line-numbers-rows,
+#article-container pre[class*='language-'] .line-numbers-rows {
+    display: none !important;
+}
