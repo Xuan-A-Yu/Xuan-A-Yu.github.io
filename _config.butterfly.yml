@@ -56,7 +56,7 @@ code_blocks:
 #   icon: link || the description || color
 social:
    fab fa-github: https://github.com/Xuan-A-Yu || Github || '#24292e'
-   fas fa-envelope: mailto:fxy04060219@outlook.com || Email || '#4a7dbe'
+   fas fa-envelope: mailto:xuanayu0406@outlook.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
@@ -65,14 +65,14 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/icon_closure.png
+  img: /img/icon_closure.webp
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: /img/muelsyse.jpg
+default_top_img: /img/closure.webp
 
 # The banner image of index page
 index_img:
@@ -97,12 +97,12 @@ category_img:
 category_per_img:
 
 # The background image of footer
-footer_img: false
+footer_img: /img/closure_w.webp
 
 # Website Background
 # Can set it to color, image URL or an array containing colors and/or image URLs
 # If an array is provided, a random background will be selected from the array on each load
-background:
+background: '#87CEFA'
 
 cover:
   # Disable the cover or not
@@ -158,9 +158,9 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
-  effect: true
+  effect: false
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
@@ -174,6 +174,7 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
+    - '日！拱！一！卒！(/>𖥦<)/!'
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -437,13 +438,13 @@ copy:
     limit_count: 150
 
 wordcount:
-  enable: false
+  enable: true
   # Display the word count of the article in post meta
   post_wordcount: true
   # Display the time to read the article in post meta
   min2read: true
   # Display the total word count of the website in aside's webinfo
-  total_wordcount: true
+  total_wordcount: false
 
 # Busuanzi count for PV / UV in site
 busuanzi:
@@ -471,7 +472,7 @@ busuanzi:
 math:
   # Choose: mathjax, katex
   # Leave it empty if you don't need math
-  use:
+  use: mathjax
   per_page: true
   hide_scrollbar: false
 
@@ -483,7 +484,7 @@ math:
 
   katex:
     # Enable the copy KaTeX formula
-    copy_tex: false
+    copy_tex: true
 
 # --------------------------------------
 # Search
@@ -553,7 +554,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use:
+  use: Giscus
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -650,9 +651,9 @@ twikoo:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo:
-  repo_id:
-  category_id:
+  repo: "Xuan-A-Yu/Xuan-A-Yu.github.io"
+  repo_id: "R_kgDOVrdrHQ"
+  category_id: "DIC_kwDOVrdrHc4DLH6w"
   light_theme: light
   dark_theme: dark
   js:
@@ -1146,7 +1147,7 @@ CDN:
     # snackbar_css:
     # translate:
     # twikoo:
-    # typed:
+    typed: https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js
     # utils:
     # valine:
     # waline_css:
